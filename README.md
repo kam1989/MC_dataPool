@@ -12,6 +12,7 @@ _Query_perf_counter() 로 값을 측정했다.
 
 테스트 결과:
 lockfree: 
+
 		min		14	__int64
 		max		1288917	__int64
 		total	6225768304	__int64
@@ -40,7 +41,8 @@ lockfree:
     평균 68.x~70.x
     어마어마한 max 값은 확실한 원인을 찾지 못함. context switch 가 측정도중 일어났다고 추측.
 
-boost + queue
+boost + queue:
+
 		min	21	__int64
 		max	1494346	__int64
 		total	8402033703	__int64
@@ -79,8 +81,9 @@ boost + queue
     나열된 일부 결과들처럼 80xxxxxxxx ~ 85xxxxxxxx 사이에서 측정됨.
     평균 80.x~85.x
 
-mutex + list
-    min		14	__int64
+mutex + list:
+
+    		min		14	__int64
 		max		1150807	__int64
 		total	12349768263	__int64
 		count	100000000	__int64
